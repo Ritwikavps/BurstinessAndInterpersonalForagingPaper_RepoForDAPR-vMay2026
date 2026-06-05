@@ -1,7 +1,6 @@
 function ResponseVector = ComputeResponseVector(StartTime, EndTime, SpeakerVec, SpeakerType, OtherType, NAType, IntervalTime)
                 
-%Ritwika VPS, Feb 2022
-%UCLA, Dpmt of Comm
+%@authorinfo, Feb 2022
 
 %function to compute response vector for both child and adult data
 

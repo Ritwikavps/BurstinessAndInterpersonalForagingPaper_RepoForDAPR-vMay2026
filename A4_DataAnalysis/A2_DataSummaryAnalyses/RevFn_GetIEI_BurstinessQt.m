@@ -1,4 +1,4 @@
-% Ritwika VPS, Dec 2025
+% @authorinfo, Dec 2025
 
 % This function computes the burstiness measure at the daylong recording level (or file level, for validation data), by pooling IEIs across multiple subrecs or 5-min subsections
 % where applicable. Note the the IEI calculation is done such that IEIs are not computed between vocs from different subrecs or 5-min sections.

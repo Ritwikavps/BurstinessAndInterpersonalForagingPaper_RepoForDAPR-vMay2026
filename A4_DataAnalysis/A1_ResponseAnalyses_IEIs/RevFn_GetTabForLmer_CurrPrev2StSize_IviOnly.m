@@ -1,6 +1,6 @@
 function [CurrPrev2StepSizeTab_Agg] = RevFn_GetTabForLmer_CurrPrev2StSize_IviOnly(ZscoreDir, ResponseWindow_s, SpkrType, OtherType, NAType, StringToRemoveFromFname, MetadataTab)
 
-% Ritwika VPS, Dec 2025
+% @authorinfo, Dec 2025
 % This is part of additional analyses code being written for the Burstiness paper in response to reviewer comments (however, I am preserving the 'step size' language as 
 % opposed to IEI in function names etc for continuity with the rest of the code.
 

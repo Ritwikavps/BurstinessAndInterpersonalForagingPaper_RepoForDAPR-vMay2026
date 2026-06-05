@@ -1,6 +1,6 @@
 clear; clc
 
-% Ritwika VPS; Feb 2026
+% @authorinfo; Feb 2026
 % This script is designed to show the burstiness in the data across different time scales a la figures in Abney et al. 2015 (Multiple Coordination Patterns in Infant 
 % and Adult Vocalizations) and Warlaumont et al, 2021 (Daylong Mobile Audio Recordings Reveal Multitimescale Dynamics in Infants' Vocal Productions and Auditory 
 % Experiences).
@@ -15,7 +15,7 @@ clear; clc
 
 %------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 %PLEASE CHANGE PATHS AND STRINGS IN FUNCTION CALL APPROPRIATELY
-Basepath = '~/Desktop/GoogleDriveFiles/research/IVFCRAndOtherWorkWithAnne/Pre_registration_followu/Data/';
+Basepath = '~/Basepath/';
 %LENA daylong data
 Lday_Path = strcat(Basepath,'LENAData/A8_NoAcoustics_0IviMerged_LENA/'); %path
 Lday_FileStr = '*_NoAcoustics_0IviMerged_LENA.csv'; %common string added to the file name root

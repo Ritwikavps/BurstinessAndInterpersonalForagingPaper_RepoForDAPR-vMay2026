@@ -1,6 +1,6 @@
 clear; clc
 
-%Ritwika VPS, UCLA Comm, Dec 2025
+%@authorinfo, Dec 2025
 
 % This script is written as part of supplemental analysis done re: revision for the Burstiness paper following ProcB reviews. Here, I take the IEIs (CHNSP and AN) for all data
 % types (LENA daylong + validation data), compute the burstiness measure as reported in "Advancing a temporal science of behavior, Abney et al, 2025" (which was originally
@@ -12,7 +12,7 @@ clear; clc
 
 %-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 %PLEASE CHANGE PATHS AND STRINGS IN FUNCTION CALL APPROPRIATELY
-BasePath = '/Users/ritwikavps/Desktop/GoogleDriveFiles/research/IVFCRAndOtherWorkWithAnne/Pre_registration_followu/Data/';%This is the base path to the google drive folder that may undergo change
+BasePath = '~/Basepath/Data/';%This is the base path to the google drive folder that may undergo change
 %read in table with .its file details
 cd(strcat(BasePath,'MetadataFiles/'));
 opts = detectImportOptions('MergedTSAcousticsMetadata.csv'); %make sure to read in infant code as string

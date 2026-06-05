@@ -1,11 +1,11 @@
 clear; clc
 
-%Ritwika VPS, Jan 2025
+%@authorinfo, Jan 2025
 % This script takes the recording day level burstiness measure tables and plots box plots summarising burstiness measures for the LENA daylong data (separated by age
 % block; 3, 6, 9, and 18 months) and the validation data (not separated by age block), for CHNSP and AN vocs.
 %-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 %PLEASE CHANGE PATHS AND STRINGS IN FUNCTION CALL APPROPRIATELY
-DataPath = '~/Desktop/GoogleDriveFiles/research/IVFCRAndOtherWorkWithAnne/Pre_registration_followu/Data/ResultsTabs/DataDescriptionSummaries/';
+DataPath = '~/Basepath/Data/ResultsTabs/DataDescriptionSummaries/';
 %-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 cd(DataPath)
 

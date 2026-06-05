@@ -1,12 +1,12 @@
 clear; clc;
 
-%Ritwika VPS; Jan 2026
+%@authorinfo; Jan 2026
 % This is part of additional plotting code being written for the Burstiness paper in response to reviewer comments. Here, I plot results of the prev. 2 IEI analyses to show the
 % effect of taking more history into account.
 
 %-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 %PLEASE CHANGE PATHS APPROPRIATELY
-DataPath = '~/Desktop/GoogleDriveFiles/research/IVFCRAndOtherWorkWithAnne/Pre_registration_followu/Data/ResultsTabs/ResponseAnalyses/';
+DataPath = '~/Basepath/Data/ResultsTabs/ResponseAnalyses/';
 %-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 %read in tables, filter data, etc
 cd(DataPath)

@@ -1,5 +1,5 @@
 clear; clc
-% Ritwika VPS, Dec 2025
+% @authorinfo, Dec 2025
 % This is part of additional analyses code being written for the Burstiness paper in response to reviewer comments (however, I am preserving the 'step size' language as 
 % opposed to IEI in function names etc for continuity with the rest of the code. Note that we only do these analyses for the 5 s response window for illustrative purposes.
 
@@ -8,7 +8,7 @@ clear; clc
 
 %-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 %PLEASE CHANGE PATHS AND STRINGS IN FUNCTION CALL APPROPRIATELY
-BasePath = '~/Desktop/GoogleDriveFiles/research/IVFCRAndOtherWorkWithAnne/Pre_registration_followu/Data/';%This is the base path to the google drive folder that may undergo change
+BasePath = '~/Basepath/Data/';%This is the base path to the google drive folder that may undergo change
 %read in table with .its file details
 cd(strcat(BasePath,'MetadataFiles/'));
 opts = detectImportOptions('MergedTSAcousticsMetadata.csv'); %make sure to read in infant code as string

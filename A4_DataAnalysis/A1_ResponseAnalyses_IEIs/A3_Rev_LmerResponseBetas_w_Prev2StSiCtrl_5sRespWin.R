@@ -1,4 +1,4 @@
-# Ritwika VPS, Dec 2025
+# @authorinfo, Dec 2025
 # This script was written in response to reviewer comments to investigate the effect of controlling for the previous as well as the prvious-to-previous
 # IEIs. 
 
@@ -12,28 +12,28 @@ library(lme4); library(lmerTest); library(pracma); library(sjmisc); library(tidy
 #ref: A general and simple method for obtaining R2 from generalized linear mixed-effects models. Nakagawa and Holger 
 
 #source necessary functions
-source('~/Desktop/GoogleDriveFiles/research/IVFCRAndOtherWorkWithAnne/Pre_registration_followu/CodeForGitHub/A4_DataAnalysis/A1_ResponseAnalyses_IEIs/RevFn_GetLmerCoeffsForResponseBetas_w_Prev2StSizeCtrl_5sRespWin.R')
+source('~/Basepath/CodeForGitHub/A4_DataAnalysis/A1_ResponseAnalyses_IEIs/RevFn_GetLmerCoeffsForResponseBetas_w_Prev2StSizeCtrl_5sRespWin.R')
 
 FilePattern <- '.*IviOnly.csv' #this is the string to pick out relevant files (See user-deifned fn WriteOpToFile_RespEffBetas for details)
 CILvl <- 99.9 #specify desired confidence interval in the form of a percent value. That is, for 95% confidence intervals, CILvl = 95 (correponding to 
 # a p-value alpha threshold = 0.05) and so on and so forth
 CIStr <- gsub('\\.','_',strcat(as.character(CILvl),'prc')) #convert the CILvl to a string, add 'prc' to signify percent, then sub the decimal point ('.')
-WriteOpPath <- '~/Desktop/GoogleDriveFiles/research/IVFCRAndOtherWorkWithAnne/Pre_registration_followu/Data/ResultsTabs/ResponseAnalyses/'
+WriteOpPath <- '~/Basepath/Data/ResultsTabs/ResponseAnalyses/'
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #LENA day-long files
-WorkingDir_LENA <- '~/Desktop/GoogleDriveFiles/research/IVFCRAndOtherWorkWithAnne/Pre_registration_followu/Data/ResultsTabs/ResponseAnalyses/ResponseEffect_w_CurrPrevStSizeControl_LENA/CurrPrev2StSize_5sRespWin_IviOnly_LENA/'
+WorkingDir_LENA <- '~/Basepath/Data/ResultsTabs/ResponseAnalyses/ResponseEffect_w_CurrPrevStSizeControl_LENA/CurrPrev2StSize_5sRespWin_IviOnly_LENA/'
 DataType_LENA <- 'LENA'
 
 #LENA 5 min matched files
-WorkingDir_LENA5min <- '~/Desktop/GoogleDriveFiles/research/IVFCRAndOtherWorkWithAnne/Pre_registration_followu/Data/ResultsTabs/ResponseAnalyses/ResponseEffect_w_CurrPrevStSizeControl_LENA5min/CurrPrev2StSize_5sRespWin_IviOnly_LENA5min/'
+WorkingDir_LENA5min <- '~/Basepath/Data/ResultsTabs/ResponseAnalyses/ResponseEffect_w_CurrPrevStSizeControl_LENA5min/CurrPrev2StSize_5sRespWin_IviOnly_LENA5min/'
 DataType_LENA5min <- 'LENA5min'
 
 #human listener labelled files: all adult utterances
-WorkingDir_Hum_AllAd <- '~/Desktop/GoogleDriveFiles/research/IVFCRAndOtherWorkWithAnne/Pre_registration_followu/Data/ResultsTabs/ResponseAnalyses/ResponseEffect_w_CurrPrevStSizeControl_H/CurrPrev2StSize_5sRespWin_IviOnly_H/'
+WorkingDir_Hum_AllAd <- '~/Basepath/Data/ResultsTabs/ResponseAnalyses/ResponseEffect_w_CurrPrevStSizeControl_H/CurrPrev2StSize_5sRespWin_IviOnly_H/'
 DataType_Hum_AllAd <- 'Hum-AllAd'
 
 #human listener labelled files with child directed AN utterances only
-WorkingDir_Hum_ChildDirAd <- '~/Desktop/GoogleDriveFiles/research/IVFCRAndOtherWorkWithAnne/Pre_registration_followu/Data/ResultsTabs/ResponseAnalyses/ResponseEffect_w_CurrPrevStSizeControl_H_ChildDirANOnly/CurrPrev2StSize_5sRespWin_IviOnly_H_ChildDirANOnly/'
+WorkingDir_Hum_ChildDirAd <- '~/Basepath/Data/ResultsTabs/ResponseAnalyses/ResponseEffect_w_CurrPrevStSizeControl_H_ChildDirANOnly/CurrPrev2StSize_5sRespWin_IviOnly_H_ChildDirANOnly/'
 DataType_Hum_ChildDirAd <- 'HumChildDirAdOnly'
 
 #put together lists for working directories and data types
